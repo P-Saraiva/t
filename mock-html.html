@@ -51,36 +51,30 @@
 
 <body>
 
-<div id="portallogindiv" class="cisco-ise">
-
-    <form id="portalloginForm" name="loginForm" action="LoginSubmit.action?from=LOGIN" method="POST">
-
-        <!-- hidden fields preservados -->
-        <input type="hidden" name="portalSessionId" value="4cc31645-9000-4695-ab71-7141c44fd86e">
-        <input type="hidden" name="token" value="LCUUDVZVDO4U97146MQWTT9JUZD1I7V0">
-        <input type="hidden" name="portal" value="1997eb3c-557c-4fcd-9b30-e3d85fa1b68a">
-
-        <!-- campo username -->
-        <label for="user.username">Nome de usuário:</label>
-        <input type="text" name="user.username" id="user.username" autocomplete="off" required>
-
-        <!-- campo password -->
-        <label for="user.password">Senha:</label>
-        <input type="password" name="user.password" id="user.password" autocomplete="off" required>
-
-        <!-- botão -->
-        <input type="submit" value="Fazer o login" id="ui_login_signon_button">
-
+    <div id="portallogindiv" class="cisco-ise cisco-ise-login-text ui-corner-all">
+     
+        <form id="portalloginForm" name="loginForm" action="LoginSubmit.action?from=LOGIN" method="POST" novalidate="novalidate">
+            <input type="hidden" name="portalSessionId" value="4cc31645-9000-4695-ab71-7141c44fd86e">
+                <input type="hidden" name="token" value="LCUUDVZVDO4U97146MQWTT9JUZD1I7V0"><input type="hidden" name="portal" value="1997eb3c-557c-4fcd-9b30-e3d85fa1b68a">
+                    <fieldset data-role="controlgroup" id="login_username_password" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical" aria-disabled="false" data-disabled="false" data-shadow="false" data-corners="true" data-exclude-invisible="true" data-type="vertical" data-mini="false" data-init-selector=":jqmData(role='controlgroup')"><div class="ui-controlgroup-controls">
+                        <label for="user.username" class="ui-input-text">Nome de usuário:</label>
+                            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-a"><input type="text" name="user.username" id="user.username" value="" autocomplete="off" required="" class="ui-input-text ui-body-a"></div>
+                                <div id="loginPagePasswordSettings" style="font-size: 0;">
+                                    <label style="display: inline-block; line-height: 1; margin-bottom: 0;" for="user.password" class="ui-input-text">Senha:</label>
+                                    <input type="hidden" name="portalSessionId" value="4cc31645-9000-4695-ab71-7141c44fd86e">
+    <input type="hidden" name="token" value="LCUUDVZVDO4U97146MQWTT9JUZD1I7V0"></div>
+    <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-a"><input type="password" name="user.password" id="user.password" value="" autocomplete="off" required="" class="ui-input-text ui-body-a"></div>
+    </div></fieldset>
+    <div class="cisco-ise-form-buttons">
+    <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" data-mini="true" data-disabled="false" class="ui-submit ui-btn ui-btn-up-b ui-shadow ui-btn-corner-all ui-mini ui-btn-inline" aria-disabled="false"><span class="ui-btn-inner"><span class="ui-btn-text">Fazer o login</span></span><input type="submit" data-theme="b" data-inline="true" data-mini="true" id="ui_login_signon_button" value="Fazer o login" class="ui-btn-hidden" data-disabled="false"></div>
+    </div>
     </form>
-
-    <!-- mock da AUP (não afeta seu teste) -->
-    <form name="aupView" style="display:none"
-          action="AupView.action?from=LOGIN" target="_blank" method="post">
-        <input type="hidden" name="token" value="LCUUDVZVDO4U97146MQWTT9JUZD1I7V0">
-        <input type="hidden" name="portal" value="1997eb3c-557c-4fcd-9b30-e3d85fa1b68a">
+    <form name="aupView" style="display:none" action="AupView.action?from=LOGIN" target="_blank" method="post">
+    <input type="hidden" name="token" value="LCUUDVZVDO4U97146MQWTT9JUZD1I7V0"><input type="hidden" name="portal" value="1997eb3c-557c-4fcd-9b30-e3d85fa1b68a">
     </form>
-
+     
 </div>
 
 </body>
 </html>
+
